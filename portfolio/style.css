@@ -1,0 +1,325 @@
+#homescreen {
+    background-image: url("img/wallpaper.jpg");
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 68px;
+    width: 68px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-direction: column;
+}
+.icontext {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    color: #FAFAFA;
+    text-shadow: 
+        -0.9px -0.9px 0 #2c2015,  
+         0.9px -0.9px 0 #2c2015,  
+        -0.9px  0.9px 0 #2c2015,  
+         0.9px  0.9px 0 #2c2015;
+    font-family: cursive;
+    font-size: 13px;
+    margin-top: 1px;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    width: 65px;
+    position: fixed;
+    padding: 10px;
+    left: 15px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+#container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    width: 65px;
+    position: fixed;
+    padding: 10px;
+    left: 120px;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+#OS {
+    background-color: #5d403d;    
+    position: fixed;
+    top: 0px;
+    display: flex;
+    text-align: center;
+    height: 22px;
+    width: 100%;
+    left: 0px;
+    color: white;
+    font-family: cursive;
+    font-size: 14px;
+    font-style: italic;
+    margin: 0;
+    outline: 2px solid #685252;
+}
+#start {
+    background-color: #5f4e44;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    left: 0px;
+    outline: 2px solid #58473f;
+}
+#starticon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 auto;
+}
+#airicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5f4e44;
+    border-radius: 2px;
+    height: auto;
+    width: 70px;
+    margin: 20px auto;
+    box-shadow: #51433a 0px 0px 1px;
+}
+.hover-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.hover-text {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #413d3baa;
+    color: #ffffff;
+    padding: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    border: 1px solid #534f4f;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.hover-container:hover .hover-text {
+    display: block;
+    visibility: visible;
+}
+  
+.details {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    max-width: 90%;
+    color: rgb(66, 56, 45);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 20px auto;
+}
+.headings {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: rgb(66, 56, 45);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin: 15px auto;
+}
+
+.food {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+.projectpics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+    width: 400px;
+    margin: 0 auto;
+}
+#aboutme {
+    background-color: #b7c0ce;
+}
+#projects {
+    background-color: #d1c6b2;
+}
+#miscellaneous {
+    background-color: #d1b9b7;
+}
+#sleepy {
+    background-color: rgb(76, 62, 57);
+}
+#sleep {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sleepicon {
+    height: 100px;
+    max-width: 100%;
+    margin: 100px auto;
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    #sleepicon {
+        height: 70px;
+        max-width: 80%;
+        margin: 50px auto;
+    }
+}
+#wake-up {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: bold;
+    font-size: 15px;
+    color: #2c1d1d;
+    text-align: center;
+    background-color: #c5b7b7;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100px;
+    margin: 20px auto;
+    box-shadow: #2c2525 0px 0px 2px;
+}
+#sleeptext {
+    height: 70px;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d1c6b2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 8px;
+    height: 400px;
+    width: 500px;
+    cursor: move;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #524942;
+    padding: 10px 15px;
+    border-bottom: 1px solid #aaa08a;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.popup-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin: 0;
+    color: #e5dfd9;
+    padding: 1px;
+}
+
+.popup-content {
+    margin-top: 40px;
+    text-align: center;
+    scrollbar-color: #686663 #ddd8cf94;
+    overflow-y: auto;
+    flex-grow: 1;
+    max-height: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .popup {
+        width: 90%;
+        height: auto;
+        max-height: 90%;
+        padding: 15px;
+    }
+
+    .popup-header {
+        padding: 8px 10px;
+    }
+
+    .popup-title {
+        font-size: 14px;
+    }
+
+    .popup-content {
+        margin-top: 35px;
+        max-height: calc(90% - 50px);
+    }
+}
+/*body {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    }*   <-- this is to make everything pixelated, but it doesn't work on all browsers */
+#head{
+    background-color: #5d403d;    
+    position: fixed;
+    top: 0px;
+    display: flex;
+    height: 20px;
+    width: 100%;
+    left: 0px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin: 0;
+    outline: 2px solid #8b8888;
+    border-radius: 10px 10px 2px 2px;
+}
